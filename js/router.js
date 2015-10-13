@@ -6,12 +6,7 @@ router.config(function($routeProvider) {
 	$routeProvider
 
 		// route for the home page
-		.when('/', {
-			templateUrl : 'pages/home.html',
-			controller  : 'mainController'
-		})
-		// route for the home page
-		.when('/#', {
+		.when('', {
 			templateUrl : 'pages/home.html',
 			controller  : 'mainController'
 		})
@@ -35,6 +30,10 @@ router.config(function($routeProvider) {
 		.when('/kontakt', {
 			templateUrl : 'pages/kontakt.html'
 		});
+
+   // use the HTML5 History API
+   $locationProvider.html5Mode(true);
+
 });
 
 // create the controller
