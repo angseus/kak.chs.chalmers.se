@@ -478,3 +478,18 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.bg-chs-green {
+    background: #4AB08C;
+    color: white;
+}
+
+.bg-chs-red {
+    background: #D5767E;
+    color: white;
+}
+
+.bg-chs-purple {
+    background: #8F76AA;
+    color: white;
+}
