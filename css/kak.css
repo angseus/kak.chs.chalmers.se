@@ -98,7 +98,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #243d76;
 }
 
 .navbar-default .nav > li>a,
@@ -132,7 +132,7 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.85);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -142,7 +142,7 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.85);
     }
 
     .navbar-default .nav > li>a:hover,
@@ -162,7 +162,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #243d76;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -212,7 +212,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.85);
 }
 
 @media(min-width:768px) {
@@ -405,7 +405,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #243d76;
 }
 
 .btn-primary:active,
