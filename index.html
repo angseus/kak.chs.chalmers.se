@@ -131,7 +131,13 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Hör av er!</h2>
                     <hr class="light">
-                    <p class="text-faded">[form incoming]</p>
+                    <form class="contact-form" method="get" novalidate>
+                        <input name="name" type="text" placeholder="Namn" id="name-field"><br>
+                        <input name="email" type="email" placeholder="Email" id="email-field"><br>
+                        <textarea name="message" placeholder="Meddelande" id="message-field"></textarea><br>
+                        <p id="success-message">Meddelandet skickades! Vi hör av oss så snart vi kan!</p>
+                        <button type="submit">Skicka</button>
+                    </form>
                 </div>
             </div>
         </div>
