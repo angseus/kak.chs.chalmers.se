@@ -479,6 +479,9 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+.bg-chs-white {
+	background: #FFFFFF;
+}
 .bg-chs-green {
     background: #4AB08C;
     color: white;
