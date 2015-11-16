@@ -35,7 +35,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #243d76;
 }
 
 h1,
@@ -479,6 +479,9 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+.bg-chs-white {
+	background: #FFFFFF;
+}
 .bg-chs-green {
     background: #4AB08C;
     color: white;
@@ -492,4 +495,9 @@ body {
 .bg-chs-purple {
     background: #8F76AA;
     color: white;
+}
+
+.logo img {
+	height: 100px;
+	width: auto;
 }
