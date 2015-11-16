@@ -60,10 +60,17 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    color: #fff;
+    background-image: url(../../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 header h1 {
   color: white;
@@ -73,7 +80,7 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   header {
     height: 300px;
-    line-height: 300px;
+    line-height: 350px;
   }
   header h1 {
     font-size: 24px;
@@ -480,4 +487,17 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+/* Button to get back to KåK */
+.button {
+  line-height: 12px;
+  width: 18px;
+  font-size: 8pt;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+  position:absolute;
+  top:0;  
+  right:0;
 }
