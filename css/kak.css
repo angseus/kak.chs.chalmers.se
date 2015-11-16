@@ -497,6 +497,23 @@ body {
     color: white;
 }
 
+.bg-img {
+    padding: 0;
+}
+
+.bg-img .container {
+    height: 800px;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.bg-img img {
+    width: 100%;
+    height: 100%;
+}
+
 .logo img {
 	height: 100px;
 	width: auto;
