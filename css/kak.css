@@ -185,10 +185,11 @@ header {
     text-align: center;
     color: #fff;
     background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
 }
 
@@ -591,4 +592,12 @@ body {
     width: 100%;
     height: 300px;
     border: 5px solid white;
+}
+
+#about .row {
+    margin-bottom: 5%;
+}
+
+#about .row img {
+    width: 65%;
 }
