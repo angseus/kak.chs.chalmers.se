@@ -53,16 +53,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#news">Nyheter</a>
+                        <a id ="news-anchor" class="page-scroll" href="#news">Nyheter</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#facilities">Lokaler</a>
+                        <a id ="facilities-anchor" class="page-scroll" href="#facilities">Lokaler</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Om KåK</a>
+                        <a id ="about-anchor" class="page-scroll" href="#about">Om KåK</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Kontakt</a>
+                        <a id ="contact-anchor" class="page-scroll" href="#contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +83,7 @@
     </header>
 
 
-    <section class="bg-primary" id="news">
+    <section class="bg-chs-blue" id="news">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -94,6 +94,12 @@
                     <p>[insert random post]</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="bg-img">
+        <div class="container">
+            <img src="img/header.jpg">
         </div>
     </section>
 
@@ -113,6 +119,12 @@
         </div>
     </section>
 
+    <section class="bg-img">
+        <div class="container">
+            <img src="img/header.jpg">
+        </div>
+    </section>
+
     <section class="bg-chs-red" id="about">
         <div class="container">
             <div class="row">
@@ -126,13 +138,25 @@
         </div>
     </section>
 
+    <section class="bg-img">
+        <div class="container">
+            <img src="img/header.jpg">
+        </div>
+    </section>
+
     <section class="bg-chs-purple" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Hör av er!</h2>
                     <hr class="light">
-                    <p class="text-faded">[form incoming]</p>
+                    <form class="contact-form" method="get" novalidate>
+                        <input name="name" type="text" placeholder="Namn" id="name-field"><br>
+                        <input name="email" type="email" placeholder="Email" id="email-field"><br>
+                        <textarea name="message" placeholder="Meddelande" id="message-field"></textarea><br>
+                        <p id="success-message">Meddelandet skickades! Vi hör av oss så snart vi kan!</p>
+                        <button type="submit">Skicka</button>
+                    </form>
                 </div>
             </div>
         </div>

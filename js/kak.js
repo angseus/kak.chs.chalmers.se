@@ -46,3 +46,75 @@
     new WOW().init();
 
 })(jQuery); // End of use strict
+
+$(document).ready(function() {
+    registerListeners();
+});
+
+function registerListeners() {
+    $('.contact-form').submit(function(e) {
+        if (validateForm()) {
+            $.ajax({
+              method: 'post',
+              url: 'php/mail.php',
+              data: {
+                name: $('#name-field').val(),
+                email: $('#email-field').val(),
+                message: $('#message-field').val(),
+              },
+              success: function(data) {
+                $('#name-field').val('');
+                $('#email-field').val('');
+                $('#message-field').val('');
+                $('#success-message').fadeIn().delay(3000).fadeOut();
+              }
+            });
+        }
+        return false;
+    });
+}
+
+function validateForm() {
+    var name = $('#name-field').val();
+    var email = $('#email-field').val();
+    var message = $('#message-field').val();
+    var validForm = true;
+    
+    if (!name) {
+        var l = 10;  
+        for( var i = 0; i < 10; i++ ) {  
+            $('#name-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        }
+        validForm = false;
+    }
+    
+    if (!email) {
+        var l = 10;  
+        for( var i = 0; i < 10; i++ ) {  
+            $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        }
+        validForm = false;
+    } else {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        if (!re.test(email)) {
+            var l = 10;  
+            for( var i = 0; i < 10; i++ ) {  
+                $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+            }
+            validForm = false;
+            console.log('fail');
+        }
+    }
+    
+    if (!message) {
+        var l = 10;  
+        for( var i = 0; i < 10; i++ ) {  
+            $('#message-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        }
+        validForm = false;
+    }
+    return validForm;
+}
+
+
+
