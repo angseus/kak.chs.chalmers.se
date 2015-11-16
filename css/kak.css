@@ -13,7 +13,8 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: Open Sans,'Helvetica Neue',Arial,sans-serif;
+    font-weight: 300;
 }
 
 hr {
@@ -45,6 +46,7 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 300;
 }
 
 p {
@@ -69,7 +71,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -579,4 +581,14 @@ body {
     color: #8F76AA;
     border: none;
     font-size: 120%;
+}
+
+#facilities .wrapper {
+    margin-top: 5%;
+}
+
+.facilities-img {
+    width: 100%;
+    height: 300px;
+    border: 5px solid white;
 }
