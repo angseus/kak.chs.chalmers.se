@@ -72,6 +72,10 @@ function registerListeners() {
         }
         return false;
     });
+
+    $('#about img#dave').dblclick(function() {
+        festa();
+    });
 }
 
 function validateForm() {
