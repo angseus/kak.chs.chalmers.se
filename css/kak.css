@@ -518,3 +518,40 @@ body {
 	height: 100px;
 	width: auto;
 }
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 1%;
+    font-size: 120%;
+    color: black;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 250px;
+    padding-top: 1%;
+}
+
+.contact-form #success-message {
+    display: none;
+}
+
+.contact-form button {
+    width: 50%;
+    margin: auto;
+    height: 50px;
+    background: white;
+    color: #8F76AA;
+    border: none;
+    font-size: 120%;
+}
+
+
+
+>>>>>>> contactform
