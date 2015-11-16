@@ -194,6 +194,11 @@
                     <a href="http://kak.chs.chalmers.se"><i class="fa fa-home fa-5x"></i></a>
                 </div>
             </div>
+
+            <div class="row text-center" style="margin-top: 35px">
+                <!-- Back to top -->
+                <div class="elevator-button btn btn-primary">Ta hissen upp</div>
+            </div>
         </div>
     </section>
 
@@ -208,10 +213,25 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    
 
     <!-- Custom KaK JavaScript -->
     <script src="js/kak.js"></script>
 
+    <!-- Elevator JavaScript -->
+    <script src="js/elevator.min.js"></script>
+    <script>
+        window.onload = function() {
+            var elevator = new Elevator({
+                element: document.querySelector('.elevator-button'),
+                mainAudio: 'audio/elevator.mp3',
+                endAudio: 'audio/ding.mp3'
+            });
+        }
+    </script>
+
+
+</script>
 </body>
 
 </html>
