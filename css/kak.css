@@ -480,8 +480,14 @@ body {
 }
 
 .bg-chs-white {
-	background: #FFFFFF;
+    background: #FFFFFF;
 }
+
+.bg-chs-blue {
+    background: #00a8ff;
+    color: white;
+}
+
 .bg-chs-green {
     background: #4AB08C;
     color: white;
@@ -495,6 +501,30 @@ body {
 .bg-chs-purple {
     background: #8F76AA;
     color: white;
+}
+
+.navbar-default .nav > li.active>a#news-anchor,
+.navbar-default .nav>li.active>a#news-anchor:focus,
+#news-anchor:hover {
+    color: #00a8ff !important;
+}
+
+.navbar-default .nav > li.active>a#facilities-anchor,
+.navbar-default .nav>li.active>a#facilities-anchor:focus,
+#facilities-anchor:hover {
+    color: #4AB08C !important;
+}
+
+.navbar-default .nav > li.active>a#about-anchor,
+.navbar-default .nav>li.active>a#about-anchor:focus,
+#about-anchor:hover {
+    color: #D5767E !important;
+}
+
+.navbar-default .nav > li.active>a#contact-anchor,
+.navbar-default .nav>li.active>a#contact-anchor:focus,
+#contact-anchor:hover {
+    color: #8F76AA !important;
 }
 
 .bg-img {
@@ -551,7 +581,3 @@ body {
     border: none;
     font-size: 120%;
 }
-
-
-
->>>>>>> contactform
