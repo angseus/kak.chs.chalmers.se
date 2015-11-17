@@ -1,4 +1,4 @@
-function randomColor() { // All creds to Adrian Bjugård for this awesome generator! ;)
+function randomColor() { // All creds to Adrian Bjugård (@qng.se) for this awesome color generator! ;)
 	var color = "#"+((1<<24)*Math.random()|0).toString(16);
 	document.getElementById("news").style.backgroundColor = color
 	document.getElementById("facilities").style.backgroundColor = color
