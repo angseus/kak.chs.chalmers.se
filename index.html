@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,7 +85,7 @@
     <section class="bg-chs-blue" id="news">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-heading">Senaste nytt</h2>
                     <hr class="light">
                     <p>[insert random post]</p>
@@ -105,15 +104,28 @@
 
     <section class="bg-chs-green" id="facilities">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Lokaler vi ansvarar för</h2>
-                    <hr class="light">
-                    <h3>Emils kårhus</h3>
-                    <p>[incoming]</p>
+            <div class="row text-center">
+                <h2>Lokaler vi har hand om</h2>
+                <hr class="light">
+            </div>
 
+            <div class="row wrapper">
+                <div class="col-md-5">
+                    <img class="facilities-img wow fadeIn" src="img/karhus.jpg">
+                </div>
+                <div class="col-md-7 text-center wow fadeIn" data-wow-delay="0.25s">
+                    <h3>Emils kårhus</h3>
+                    <p>Chalmers Kårhus ritades av Gert Wingårdh och färdigställdes 2001. Huset erhöll Kasper Salinpriset 2001 som delas ut av Sveriges Arkitekter. I huset finns förutom Chalmers studentkår även Chalmers reception, simbassäng, gymnastiksal, bokhandel, bastu, flera restauranger, nattklubb, pub och den stora aulan runAn, där Programkommittén PU[1] brukar visa bio. Huset utgör även del av huvudentrén till högskolan.</p>
+                </div>
+            </div>
+
+            <div class="row wrapper">
+                <div class="col-md-5 col-md-push-7">
+                    <img class="facilities-img wow fadeIn" src="img/jvg.jpg" data-wow-delay="0.5s">
+                </div>
+                <div class="col-md-7 col-md-pull-5 text-center wow fadeIn" data-wow-delay="0.75s">
                     <h3>Järnvägsvagnen</h3>
-                    <p>[incoming]</p>
+                    <p>Kåren har en Järnvägsvagn som används som sittningslokal, den är lagom stor för knappt femtio personer. Det finns en bar, bord och stolar för 48 gäster. Järnvägsvagnen är en hyrbar lokal för alla medlemmar i Chalmers studentkår, men även för gamla medlemmar och företag med Chalmersanknytning.</p>
                 </div>
             </div>
         </div>
@@ -127,16 +139,48 @@
 
     <section class="bg-chs-red" id="about">
         <div class="container">
+            <div class="row text-center">
+                <h2>KåK 15/16</h2>
+                <hr class="light">
+            </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Vilka är vi?</h2>
-                    <hr class="light">
-                    <p class="text-faded">[photos and presentation incoming]</p>
-                    <div class="span3 wow lightSpeedIn center animated" style="visibility: visible; animation-name: lightSpeedIn;"><img src="img/very.gif" height="200" onclick="festa()"><br>Party? Party!</div>
+                <div class="col-md-4 text-center wow fadeIn">
+                    <img id="anna" class="img-circle " src="img/anna.jpg">
+                    <h4>Anna Jansson</h4>
+                    <h5>Ordförande</h5>
+                </div>
+                <div class="col-md-4 text-center wow fadeIn" data-wow-delay="0.25s">
+                    <img id="angseus" class="img-circle" src="img/angseus.jpg">
+                    <h4>Johan Angséus</h4>
+                    <h5>PR och event</h5>
+                </div>
+                <div class="col-md-4 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <img id="axel" class="img-circle" src="img/axel.jpg">
+                    <h4>Axel Niklasson</h4>
+                    <h5>Byggmästare</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <img id="tall" class="img-circle" src="img/tall.jpg">
+                    <h4>Fredrik Tallroth</h4>
+                    <h5>Intendent</h5>
+                </div>
+                <div class="col-md-4 text-center wow fadeIn" data-wow-delay="0.25s">
+                    <img id="ragnar" class="img-circle wow fadeIn" src="img/ragnar.jpg">
+                    <h4>Ragnar Dahlén</h4>
+                    <h5>Konduktör</h5>
+                </div>
+                <div class="col-md-4 text-center wow fadeIn">
+                    <img id="dave" class="img-circle" src="img/maskot.jpg">
+                    <h4>Dave</h4>
+                    <h5>Lärling</h5>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="bg-img" id="bg-3">
         <div class="container">
@@ -147,7 +191,7 @@
     <section class="bg-chs-purple" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-heading">Hör av er!</h2>
                     <hr class="light">
                     <form class="contact-form" method="get" novalidate>
@@ -180,6 +224,7 @@
                     <div class="logo text-center">
                         <img src="img/logo.png">
                     </div>
+
                 </div>
 
                 <div class="col-md-3">
@@ -193,6 +238,23 @@
                     <a href="mailto:info@kak.chs.chalmers.se"><i class="fa fa-envelope fa-5x"></i></a> &nbsp&nbsp&nbsp&nbsp
                     <a href="http://kak.chs.chalmers.se"><i class="fa fa-home fa-5x"></i></a>
                 </div>
+
+                <div class="col-md-3">
+                    <div class="logo text-center">
+                        <img src="img/chs_logo.gif">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="https://www.facebook.com/karhuskommitten/"><i class="fa fa-facebook fa-5x"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a href="mailto:info@kak.chs.chalmers.se"><i class="fa fa-envelope fa-5x"></i></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="http://kak.chs.chalmers.se"><i class="fa fa-home fa-5x"></i></a>
+                </div>
+            </div>
+
+            <div class="row text-center" style="margin-top: 35px">
+                <!-- Back to top -->
+                <div class="elevator-button btn btn-primary">Ta hissen upp</div>
             </div>
 
             <div class="row text-center" style="margin-top: 35px">
