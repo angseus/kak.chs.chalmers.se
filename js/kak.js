@@ -48,8 +48,30 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
+    fetchPosts();
     registerListeners();
 });
+
+function fetchPosts() {
+    $.get('php/cms.php', function(data) {
+        var jsonArr = $.parseJSON(data);
+        var elementString = '';
+        for (var i = 0; i < jsonArr.length; i++) {
+            postObject = jsonArr[i];
+            elementString += buildPostElement(postObject);
+        }
+        $('#posts-wrapper').html(elementString);
+    });
+}
+
+function buildPostElement(post) {
+    var postString = '<div class="post text-center">';
+    postString += '<h3>' + post['title'] + '</h3>';
+    postString += '<p>' + post['content'] + '</p>';
+    postString += '<p>Postat ' + post['timestamp'] + '</p>';
+    postString += '</div>';
+    return postString;
+}
 
 function registerListeners() {
     $('.contact-form').submit(function(e) {

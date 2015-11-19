@@ -1,0 +1,41 @@
+.container {
+	margin: 2% auto;
+}
+
+.container > div {
+	background: #EFEFEF;
+}
+
+#new-post-wrapper {
+}
+
+#new-post-wrapper form {
+	margin-top: 2%;
+}
+
+.form-input {
+	width: 100%;
+	border: none;
+	font-size: 120%;
+	margin-bottom: 2%;
+	padding-left: 1%;
+}
+
+.form-textarea {
+	width: 100%;
+	border: none;
+	font-size: 120%;
+	margin-bottom: 2%;
+	padding-left: 1%;
+	resize: none;
+	height: 40%;
+}
+
+.form-button {
+	width: 40%;
+	float: right;
+	margin-bottom: 2%;
+	color: white;
+	border: none;
+	font-size: 120%;
+}
