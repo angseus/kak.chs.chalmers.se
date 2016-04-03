@@ -119,6 +119,34 @@ aside {
     background-color: transparent;
 }
 
+#aspForm {
+    width: 100%;
+    margin: auto;
+}
+
+#aspForm input {
+    width: 100%;
+    margin: 2px auto;
+    height: 40px;
+    font-size: 125%;
+    color: #00a8ff;
+    padding-left: 5px;
+}
+
+#aspForm #success-message {
+    display: none;
+}
+
+#aspForm button {
+    width: 100%;
+    margin: 2px auto;
+    height: 40px;
+    font-size: 125%;
+    color: #00a8ff;
+    background: white;
+    border: none;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);

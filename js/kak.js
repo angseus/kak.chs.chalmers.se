@@ -52,8 +52,30 @@ $(document).ready(function() {
 });
 
 function registerListeners() {
+
+    $('#aspForm').submit(function(e) {
+        if (validateAspForm()) {
+            $.ajax({
+              method: 'post',
+              url: 'php/aspa.php',
+              data: {
+                name: $('#aspName').val(),
+                email: $('#aspEmail').val(),
+                tel: $('#aspTel').val(),
+              },
+              success: function(data) {
+                $('#aspName').val('');
+                $('#aspEmail').val('');
+                $('#aspTel').val('');
+                $('#aspForm #success-message').fadeIn().delay(3000).fadeOut();
+              }
+            });
+        }
+        return false;
+    });
+
     $('.contact-form').submit(function(e) {
-        if (validateForm()) {
+        if (validateContactForm()) {
             $.ajax({
               method: 'post',
               url: 'php/mail.php',
@@ -66,7 +88,7 @@ function registerListeners() {
                 $('#name-field').val('');
                 $('#email-field').val('');
                 $('#message-field').val('');
-                $('#success-message').fadeIn().delay(3000).fadeOut();
+                $('.contact-form #success-message').fadeIn().delay(3000).fadeOut();
               }
             });
         }
@@ -79,7 +101,49 @@ function registerListeners() {
     });
 }
 
-function validateForm() {
+function validateAspForm() {
+    var name = $('#aspName').val();
+    var email = $('#aspEmail').val();
+    var tel = $('#aspTel').val();
+    var validForm = true;
+
+    if (!name) {
+        var l = 10;  
+        for( var i = 0; i < 10; i++ ) {  
+            $('#aspName').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        }
+        validForm = false;
+    }
+
+    if (!email) {
+        var l = 10;  
+        for( var i = 0; i < 10; i++ ) {  
+            $('#aspEmail').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        }
+        validForm = false;
+    } else {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        if (!re.test(email)) {
+            var l = 10;  
+            for( var i = 0; i < 10; i++ ) {  
+                $('#aspEmail').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+            }
+            validForm = false;
+        }
+    }
+
+    if (!tel) {
+        var l = 10;  
+        for( var i = 0; i < 10; i++ ) {  
+            $('#aspTel').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
+        }
+        validForm = false;
+    }
+
+    return validForm;
+}
+
+function validateContactForm() {
     var name = $('#name-field').val();
     var email = $('#email-field').val();
     var message = $('#message-field').val();
@@ -107,7 +171,6 @@ function validateForm() {
                 $('#email-field').animate({'margin-left': "+=" + (l = -l) + 'px'}, 35); 
             }
             validForm = false;
-            console.log('fail');
         }
     }
     
