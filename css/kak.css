@@ -129,7 +129,7 @@ aside {
     margin: 2px auto;
     height: 40px;
     font-size: 125%;
-    color: #00a8ff;
+    color: #A29593;
     padding-left: 5px;
 }
 
@@ -142,7 +142,7 @@ aside {
     margin: 2px auto;
     height: 40px;
     font-size: 125%;
-    color: #00a8ff;
+    color: #A29593;
     background: white;
     border: none;
 }
@@ -526,6 +526,11 @@ body {
     color: white;
 }
 
+.bg-kak-brown {
+    background: #A29593;
+    color: white;
+}
+
 .navbar-default .nav > li.active>a#news-anchor,
 .navbar-default .nav>li.active>a#news-anchor:focus,
 #news-anchor:hover {
@@ -542,6 +547,12 @@ body {
 .navbar-default .nav>li.active>a#about-anchor:focus,
 #about-anchor:hover {
     color: #D5767E !important;
+}
+
+.navbar-default .nav > li.active>a#aspa-anchor,
+.navbar-default .nav>li.active>a#aspa-anchor:focus,
+#aspa-anchor:hover {
+    color: #A29593 !important;
 }
 
 .navbar-default .nav > li.active>a#contact-anchor,
@@ -629,7 +640,7 @@ body {
     transition: all .35s;
 }
 
-#facilities a:focus, 
+#facilities a:focus,
 #facilities a:hover {
     color: #f0f0f0;
 }

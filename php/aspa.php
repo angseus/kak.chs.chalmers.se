@@ -1,5 +1,5 @@
 <?php
-$to      = "axel@kak.chs.chalmers.se";
+$to      = "info@kak.chs.chalmers.se";
 $subject = "[kak.chs.chalmers.se] Ny aspjävel";
 $headers = "Content-type: text/plain; charset=utf-8\r\n";
 
